@@ -6,41 +6,45 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="header">
-    <div class="logo">
-      <h1>Scandi</h1>
-      <img src="img/scandi_logo.png" alt="Логотип компании Scandi" width="25" height="25">
+  <header class="page-heading">
+    <div class="header-container">
+      <a class="logo"><img src="img/scandi_logo.png" alt="Логотип компании Scandi" width="25" height="25">
+        Scandi
+      </a>
+
+      <nav class="menu">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#about" class="nav-link">О компании</a></li>
+          <li class="nav-item"><a href="#portfolio" class="nav-link">Портфолио</a></li>
+          <li class="nav-item"><a href="#team" class="nav-link">Команда</a></li>
+          <li class="nav-item"><a href="#process" class="nav-link">Как мы работаем</a></li>
+          <li class="nav-item"><a href="#feedback" class="nav-link">Отзывы клиентов</a></li>
+          <li class="nav-item"><a href="#request" class="nav-link">Оставить заявку</a></li>
+        </ul>
+      </nav>
+
+      <a href="tel:+79818574624" class="phone">+7 (981) 857-46-24</a>
     </div>
-
-    <nav class="menu">
-      <ul>
-        <li><a href="#about-section">О компании</a></li>
-        <li><a href="#portfolio-section">Портфолио</a></li>
-        <li><a href="#team-section">Команда</a></li>
-        <li><a href="#how-we-work-section">Как мы работаем</a></li>
-        <li><a href="#feedback-article">Отзывы клиентов</a></li>
-        <li><a href="#request-section">Оставить заявку</a></li>
-        <li><a href="tel:+79818574624">+7 (981) 857-46-24</a></li>
-      </ul>
-    </nav>
   </header>
-  <main>
-    <section id="main-section" class="main">
-      <h2>Поможем сделать вашу квартиру уютнее</h2>
-      <p>Подбираем текстиль, мебель и аксессуары под ваш интерьер, 
-        находим магазины и помогаем организовать доставку
-      </p>
 
-      <div>
-        <a href="#request">Оставить заявку</a>
+  <main>
+    <section class="promo" id="promo">
+      <div class="promo-text">
+        <h1 class="promo-heading">Поможем сделать вашу квартиру уютнее</h1>
+        <p class="promo-description">Подбираем текстиль, мебель и аксессуары <br>
+          под ваш интерьер, находим магазины <br>
+          и помогаем организовать доставку
+        </p>
+
+        <a href="#request" class="button promo-button">Оставить заявку</a>
       </div>
     </section>
 
-    <section id="about-section" class="about">
-      <h2>О нас</h2>
+    <section class="about" id="about">
+      <h2 class="section-heading">О нас</h2>
       <img src="img/table_setting.png" alt="Сервировка стола" width="445" height="465">
 
-      <div>
+      <div class="about-text">
         <p>Премиальный европейский текстиль — одно из самых главных направлений работы коллектива. 
           Создавать неповторимые интерьеры для наших дорогих клиентов, уделяя внимание мельчайшим деталям 
           — вот то, что по-настоящему вдохновляет дизайнеров нашей студии.
@@ -51,8 +55,8 @@
         </p>
       </div>
 
-      <section>
-        <ul>
+      <section class="activity">
+        <ul class="activity-list">
           <li>5 лет опыта</li>
           <li>100 проектов</li>
           <li>10 наград</li>
@@ -60,10 +64,10 @@
       </section>
     </section>
 
-    <section id="portfolio-section" class="portfolio">
-      <h2>Наши работы</h2>
+    <section class="portfolio" id="portfolio">
+      <h2 class="section-heading">Наши работы</h2>
 
-      <div>
+      <div class="portfolio-text">
         <h3>Квартира-студия 30 кв.м.</h3>
         <p>В квартире были светлые стены и тёплые цвета. Мы сконцентрировались на отсылках 
           к природе и сделали ребятам уютный интерьер, отсылающий к виллам островов Бали.
@@ -74,33 +78,37 @@
       <img src="img/livingroom1.png" alt="Интерьер зала" width="692" height="451">
       <img src="img/bathroom.png" alt="Интерьер ванной комнаты" width="488" height="451">
 
-      <div>
-        <button>Смотреть ещё</button>
+      <button class="more-button">Смотреть ещё</button>
+    </section>
+
+    <section class="team" id="team">
+      <h2 class="section-heading">Команда</h2>
+      
+      <div class="masha">
+        <img src="img/masha.png" alt="Маша, главный дизайнер" width="320" height="253">
+        <p>Это Маша, наш главный дизайнер. Она отвечает за дизайн-проект, приезжает 
+          к вам домой, общается и помогает сделать вашу квартиру красивой и уютной.
+        </p>
+       </div>
+
+      <div class="sasha">
+        <img src="img/sasha.png" alt="Саша, менеджер" width="320" height="253">
+        <p>С нашим менеджером Сашей вы познакомитесь в первую очередь. 
+          Она проконсультирует вас, соберёт все документы и ответит на все вопросы.
+        </p>
+      </div>
+
+      <div class="katya">
+        <img src="img/katya.png" alt="Катя, дизайнер" width="320" height="253">
+        <p>Катя тоже занимается дизайном. Она всегда находит общий язык 
+          с клиентами и точно знает, как обустроить дом так, чтобы вам понравилось.
+        </p>
       </div>
     </section>
 
-    <section id="team-section" class="team">
-      <h2>Команда</h2>
-      <img src="img/masha.png" alt="Маша, главный дизайнер" width="320" height="253">
-      <img src="img/sasha.png" alt="Саша, менеджер" width="320" height="253">
-      <img src="img/katya.png" alt="Катя, дизайнер" width="320" height="253">
-
-      <p>Это Маша, наш главный дизайнер. Она отвечает за дизайн-проект, приезжает 
-        к вам домой, общается и помогает сделать вашу квартиру красивой и уютной.
-      </p>
-
-      <p>С нашим менеджером Сашей вы познакомитесь в первую очередь. 
-        Она проконсультирует вас, соберёт все документы и ответит на все вопросы.
-      </p>
-
-      <p>Катя тоже занимается дизайном. Она всегда находит общий язык 
-        с клиентами и точно знает, как обустроить дом так, чтобы вам понравилось.
-      </p>
-    </section>
-
-    <section id="how-we-work-section" class="how-we-work">
-      <h2>Как мы работаем</h2>
-      <ol>
+    <section class="process" id="process">
+      <h2 class="section-heading">Как мы работаем</h2>
+      <ol class="process-list">
         <li>Знакомимся, выезжаем на объект, утверждаем концепцию, подписываем договор.</li>
         <li>Подбираем мебель, текстиль, аксессуары. Делаем 3D-визуализацию.</li>
         <li>Находим нужные магазины, помогаем с доставкой и оплатой товаров.</li>
@@ -108,8 +116,8 @@
       </ol>
     </section>
 
-    <article id="feedback-article" class="feedback">
-      <h2>Отзывы</h2>
+    <article class="feedback" id="feedback">
+      <h2 class="article-heading">Отзывы</h2>
       <blockquote>
         «Восторг! Спасибо, за комфортную жизнь.Очень рада, что выбрала вашу студию для
         украшения своего дома. Работа шла быстро, было очень приятно общаться и взаимодествовать с сотрудниками. 
@@ -117,32 +125,31 @@
       </blockquote>
       <cite>АННА БЕЛОВСКАЯ</cite>
 
-      <div class="feedback">
+      <div>
         <img src="img/livingroom2.png" alt="Интерьер зала Анны Беловской" width="407" height="272">
         <img src="img/kitchen2.png" alt="Интерьер кухни Анны Беловской" width="407" height="272">
       </div>
     </article>
 
-    <section id="request-section" class="request">
-      <h2>Оставить заявку</h2>
-      <p>Оставьте свои контакты. Менеджер перезвонит <br>
-        в удобное вам время и ответит на все вопросы.
+    <section class="request" id="request">
+      <h2 class="section-heading request-heading">Оставить заявку</h2>
+      <p>Оставьте свои контакты. Менеджер перезвонит в удобное вам время и ответит на все вопросы.
       </p>
 
       <form action="#">
         <input type="text" placeholder="Ваше имя"> <br>
         <input type="tel" placeholder="Введите телефон">
       </form>
-    </section> 
-    <button>Оставить заявку</button>  
-    
-    <div>
+
+      <button class="button request-button">Оставить заявку</button>
+
       <img src="img/map.png" alt="Карта офиса компании Scandi">
-    </div>
+    </section> 
   </main>
+
   <footer class="footer">
     <div class="tel">
-      <a href="tel:+79818574624">+7 (981) 857-46-24</a>
+      <a href="tel:+79818574624" class="phone">+7 (981) 857-46-24</a>
     </div>
     
     <div class="address">
