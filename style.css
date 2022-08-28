@@ -85,7 +85,7 @@ a:hover {
 }
 
 .promo {
-  background: url("/img/main_background.png") no-repeat;
+  background: url("../img/main_background.png") no-repeat;
   background-size: cover;
   padding-left: 182px;
   padding-bottom: 168px; 
@@ -191,7 +191,7 @@ a:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: url("/img/bedroom.png");
+  background: url("../img/bedroom.png");
   width: 488px;
   box-shadow: inset 0 0 0 1000px rgba(100, 72, 69, 0.8);
   grid-area: block-1; 
