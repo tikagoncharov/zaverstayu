@@ -405,3 +405,7 @@ input:focus::placeholder {
  margin-left: 42px;
  margin-right: 379px;
 }
+
+.entrepreneur {
+  padding-right: 0;
+}
