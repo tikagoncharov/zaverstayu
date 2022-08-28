@@ -398,14 +398,11 @@ input:focus::placeholder {
 
 .footer {
   display: flex;
+  justify-content: space-between;
   padding: 37px 100px;
 }
 
 .address {
  margin-left: 42px;
  margin-right: 379px;
-}
-
-.entrepreneur {
-  margin-right: 0;
 }
