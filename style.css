@@ -300,9 +300,9 @@ a:hover {
 .feedback .container {
   display: grid;
   grid-template-columns: 72px 407px 407px 72px;
+  gap: 20px;
   align-items: center;
   margin: 0 182px;
-  gap: 20px;
 }
 
 .feedback .right-arrow {
