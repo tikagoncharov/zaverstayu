@@ -241,6 +241,7 @@ a:hover {
   line-height: 37px;
   font-family: 'Montserrat';
   color: #533738;
+  cursor: pointer;
 }
 
 .team .section-heading {
@@ -308,10 +309,12 @@ a:hover {
 
 .feedback .right-arrow {
   margin-left: 9px;
+  cursor: pointer;
 }
 
 .feedback .left-arrow {
   margin-right: 9px;
+  cursor: pointer;
 }
 
 .feedback {
@@ -372,6 +375,7 @@ blockquote {
   color: #533738;
   font-family: 'Montserrat';
   margin-top: 31px;
+  cursor: pointer;
 }
 
 input {
