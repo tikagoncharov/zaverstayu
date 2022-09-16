@@ -28,7 +28,8 @@ a:hover {
 
 .button:hover {
   background-color: #533738;
-}
+  color: #CC8B86 !important;
+} 
 
 .button a:hover, .request-button span:hover {
   color: #CC8B86;
@@ -333,7 +334,6 @@ a:hover {
 }
 
 .feedback .left-arrow:hover, .feedback .right-arrow:hover {
-  background-color: #533738;
   border-radius: 50%;
   width: 100px;
 }
